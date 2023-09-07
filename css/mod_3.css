@@ -1,0 +1,91 @@
+.nav3 {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    height: 365px;
+    width: 345px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+svg {
+    overflow: auto;
+}
+
+#chart_div {
+    position: absolute;
+    left: -50px;
+}
+
+#table_div {
+    position: absolute;
+    left: 5px;
+    top: 350px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.459), -4px -4px 10px rgba(208, 208, 208, 0.39);
+}
+
+.cssHeaderRow {
+    background-color: #000000;
+    color: #301934;
+}
+
+.cssTableRow {
+    background-color: #333333;
+    color: white;
+}
+
+.cssHoverTableRow {
+    background: #28282B;
+    color: white;
+}
+
+.cssOddTableRow {
+    background-color: #333333;
+    color: white;
+}
+
+.padd {
+    height: 30px;
+    padding-top: 40px;
+}
+
+.mod3nav {
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+a {
+    margin-top: 20px;
+    margin-left: 12px;
+    background-color: #333333;
+    border-radius: 10px;
+    color: white;
+    padding: 3px 12px;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.37), -4px -4px 10px rgba(208, 208, 208, 0.15);
+    border-radius: 10px;
+
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 29px;
+    align-items: center;
+}
+
+a:hover {
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.37), -8px -8px 10px rgba(208, 208, 208, 0.15);
+    transition: .2s ease-in;
+}
+
+a:active, a:focus {
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0), -8px -8px 10px rgba(255, 255, 255, 0);
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.53), inset -5px -5px 10px rgba(255, 255, 255, 0.12);
+}

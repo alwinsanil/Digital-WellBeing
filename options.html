@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screen Timer Options</title>
+    <script src="js/options.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/options.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Screen Timer Options</h1>
+    </div>
+    <div id="loginpg">
+      <label id="login-text">Controls Login</label>
+      <input id="usrname" type="text" placeholder="username" /><br />
+      <input id="pswd" type="password" placeholder="password" />
+      <input type="button" value="Login" id="login" />
+      <div id="unsuccessful">Invalid Credentials!</div>
+    </div>
+    <div id="tohide">
+      <div id="settings">
+        <label class="lab">Sites to not track (one per line) </label>
+        <textarea class="text" id="blacklist"></textarea><br />
+        <label class="lab">Sites to Restrict Usage (one per line)</label>
+        <textarea class="text" id="restrictionlist"></textarea>
+        <textarea class="text" id="restrictiontime"></textarea><br />
+        <label class="lab">Chart Display Limit</label><br /><br />
+        <label class="lab">Show Top</label>
+        <input
+          class="text show-top"
+          id="chart_limit"
+          type="text"
+          size="2"
+          maxlength="2"
+        />
+        <div class="login-details">
+          <label class="lab login-text">Login Details</label><br /><br /><br />
+          <label class="lab">Username</label>
+          <input class="text up" id="username" type="text" size="5" /><br />
+          <label class="lab">Password</label>
+          <input class="text up" id="passwd" type="text" size="5" /><br /><br />
+        </div>
+        <button id="clear-data">Clear All Data</button>
+      </div>
+      <div id="footer">
+        <button id="save-button">Save</button>
+        <span id="status"></span>
+      </div>
+    </div>
+
+    <script src="js/paswd.js"></script>
+  </body>
+</html>

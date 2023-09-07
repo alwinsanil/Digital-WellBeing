@@ -1,0 +1,8 @@
+html[remove_entire_sidebar="true"] #secondary,
+html[remove_comments="true"] #comments{
+	display: none !important;
+}
+/* Center contents when the sidebar is entirely hidden */
+html[remove_entire_sidebar="true"] ytd-watch-flexy[flexy][is-two-columns_]:not([fullscreen]):not([theater]) {
+	--ytd-watch-flexy-max-player-width: calc(var(--ytd-watch-flexy-chat-max-height)*var(--ytd-watch-flexy-width-ratio)/var(--ytd-watch-flexy-height-ratio)) !important
+}

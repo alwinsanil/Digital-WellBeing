@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Digital WellBeing</title>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/mod_1.css">
+    <link rel="stylesheet" type="text/css" href="css/mod_2.css">
+    <link rel="stylesheet" type="text/css" href="css/mod_3.css">
+    <link rel="stylesheet" type="text/css" href="css/mod_4.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/popup-mod3.js"></script>
+    
+  </head>
+
+  <body>
+    <div id='header' class="header">
+      <button class="icon-box" id="home-btn">
+        <img class="header-icon" src="assets\icons\icon128.png" width="50px" height="50px"/>
+      </button>
+      <div class='header-text' id='header-text'><h3>Digital WellBeing</h3> </div>
+    </div>
+<div id="navarea">
+
+<!-- home ---------------------------------------------------------------------------------->
+
+  <div id="home">
+    <div>
+      <img class="home-img" src="assets\icons\icon128.png" alt="Digital WellBeing Logo">
+    </div>
+    <div class="home-text">
+      <label class="home-head">Digital WellBeing</label>
+      <label class="home-sub">Make work in Internet work for you</label>
+    </div>
+  </div>
+
+<!-- nav 1  ----------------------------------------------------------------------------- -->
+
+  <div id="nav1">
+    <div id="top">
+      <form id="newSessionForm">
+        <div class="newses">
+          <input id="newSessionName" class="newSessionName" type="text" placeholder="Name of the Session">
+          <input class="submit-btn" type="submit" value="Save">
+        </div>
+      </form>
+    </div>
+    <div class="mid" id="mid">
+    </div>
+  </div>
+
+<!-- nav2 --------------------------------------------------------------------------------- -->
+    <div class="nav2" id="nav2">
+      <div class="app-box">
+        <div class="app-inner">
+            <div class="time-select">
+            <div class="time">
+              <input class="time-inp hh" type="text" maxlength="2" value="00" id="hh">
+              <input class="time-inp mm" type="text" maxlength="2" value="00" id="mm">
+              <input class="time-inp ss" type="text" maxlength="2" value="00" id="ss">
+              <div class="check2">
+                <input class="always_on" id="always_on" type="button" value="Unblock">
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="action">
+            <div class="action-item">
+              <a href="#" id="start" class="btn green">Start</a>
+            </div>
+            <div class="action-item">
+              <a href="#" id="pause" class="btn not-active">Stop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- nav 3 ---------------------------------------------------------------------------------------------- -->
+
+    <div class="nav3" id="nav3">
+      <div class="mod3nav">
+        <a class="mod3-btn today" id="today" href="#">Today</a>
+        <a class="mod3-btn avg" id="average" href="#">Average</a>
+        <a class="mod3-btn all" id="all" href="#">All Time</a>
+        <a class="options" id="options" href="#">Options</a>
+      </div>
+      <div style="clear: both;"></div>
+      <div id="data">
+        <span id="nodata">Start browsing to collect usage data.</span>
+        <div id="chart_div"></div>
+        <div id="table_div"></div>
+        <div class="padd"></div>
+      </div>
+    </div>
+
+<!-- nav 4 ------------------------------------------------------------------------------------------------------------>
+
+    <div id="nav4">
+      <div class="option1">
+        <label class="option-text" for="auto_skip_ads">Disable Ads</label>
+        <div class="check">
+          <label class="switch">
+            <input type="checkbox" id="auto_skip_ads" class="auto_skip_ads" value="auto_skip_ads" unchecked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="option2">
+        <label class="option-text" for="remove_entire_sidebar">Center contents</label>
+        <div class="check">
+          <label class="switch">
+            <input type="checkbox" id="remove_entire_sidebar" class="remove_entire_sidebar" value="remove_entire_sidebar" unchecked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="option3">
+        <label class="option-text" for="remove_comments">Disable Comments</label>
+        <div class="check">
+          <label class="switch">
+            <input type="checkbox" id="remove_comments" class="remove_comments" value="remove_comments" unchecked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <!-- <div class="manage_history-btn" id="manage_history_container"> -->
+        <a id="manage_history" class="manage_history-btn" href="https://myactivity.google.com/product/youtube" target="_blank">Manage Youtube History</a>
+          <!-- <label class="manage_history-text">Manage YouTube History</label> -->
+        </a> 
+      </div>
+    </div>
+
+
+</div>
+    <div class="nav" id="nav">
+      <button class="nav-btn mod_1" id="btn-mod-1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="white" d="M5 2v2.5A1.5 1.5 0 0 0 6.5 6h2A1.5 1.5 0 0 0 10 4.5V2h.379a2 2 0 0 1 1.414.586l1.621 1.621A2 2 0 0 1 14 5.621V12a2 2 0 0 1-2 2V9.5A1.5 1.5 0 0 0 10.5 8h-5C4.673 8 4 8.669 4 9.498V14a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1Zm1 0v2.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V2H6ZM5 14h6V9.5a.5.5 0 0 0-.5-.5h-5c-.277 0-.5.223-.5.498V14Z"/></svg>
+      </button>
+      <button class="nav-btn mod_2" id="btn-mod-2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="white" d="M12 22a2 2 0 0 1-2-2h4a2 2 0 0 1-2 2Zm7.585-.1l-2.9-2.9H4v-2l2-1v-5.5a10.57 10.57 0 0 1 .182-2L2.615 4.929L4.03 3.515L21 20.487L19.585 21.9ZM18 14.659L8.28 4.938A4.946 4.946 0 0 1 10 4.18V2h4v2.18c2.58.613 4 2.858 4 6.32v4.16v-.001Z"/></svg>
+      </button>
+      <button class="nav-btn mod_3" id="btn-mod-3">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="white" d="M11 2.05v3.02a7 7 0 1 0 5.192 12.536l2.137 2.137A9.966 9.966 0 0 1 12 22C6.477 22 2 17.523 2 12c0-5.185 3.947-9.449 9-9.95zM21.95 13a9.948 9.948 0 0 1-2.207 5.328l-2.137-2.136A6.958 6.958 0 0 0 18.929 13h3.022zM13.002 2.05a10.004 10.004 0 0 1 8.95 8.95H18.93a7.005 7.005 0 0 0-5.928-5.929V2.049z"/></svg>
+      </button>
+      <button class="nav-btn mod_4" id="btn-mod-4">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><rect x="0" y="0" width="16" height="16" fill="none" stroke="none" /><path fill="white" d="M15.841 4.8s-.156-1.103-.637-1.587c-.609-.637-1.291-.641-1.603-.678c-2.237-.163-5.597-.163-5.597-.163h-.006s-3.359 0-5.597.163c-.313.038-.994.041-1.603.678C.317 3.697.164 4.8.164 4.8S.005 6.094.005 7.391v1.213c0 1.294.159 2.591.159 2.591s.156 1.103.634 1.588c.609.637 1.409.616 1.766.684c1.281.122 5.441.159 5.441.159s3.363-.006 5.6-.166c.313-.037.994-.041 1.603-.678c.481-.484.637-1.588.637-1.588s.159-1.294.159-2.591V7.39c-.003-1.294-.162-2.591-.162-2.591zm-9.494 5.275V5.578l4.322 2.256l-4.322 2.241z"/></svg>
+      </button>
+    </div>
+
+    <script src="js/popup-mod2.js"></script>
+    <script src="js/popup-mod3.js"></script>
+    <script src="js/popup-mod4.js"></script>
+    <script src="js/popup-mod1.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+  </body>
+
+</html>

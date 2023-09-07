@@ -1,0 +1,218 @@
+:root {
+  --dark: #333333;
+  --hightlight-text: #AD00FF;
+  --dark-black: #2a2a2a;
+  --white: #ffffff;
+}
+
+body {
+  width: 330px;
+  height: 500px;
+
+  background: var(--dark);
+}
+
+.header {
+  position: absolute;
+  width: 370px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+
+  background: var(--dark);
+  box-shadow: -4px -4px 30px rgba(0, 0, 0, 0.83);
+}
+
+.header-text {
+  position: absolute;
+  width: 221px;
+  height: 50px;
+  left: 94px;
+  top: 15px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--hightlight-text);
+}
+
+.icon-box {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 27px;
+  top: 15px;
+  border: none;
+
+  background: var(--dark);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.32), -2px -2px 5px rgba(220, 220, 220, 0.25);
+  border-radius: 10px;
+}
+
+.icon-box:hover {
+  box-shadow: 8px 8px 15px rgba(255, 255, 255, 0), -8px -8px 1 rgba(255, 255, 255, 0);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.53), inset -5px -5px 10px rgba(255, 255, 255, 0.12);
+}
+
+.header-icon:hover {
+  box-shadow: 8px 8px 15px rgba(255, 255, 255, 0), -8px -8px 1 rgba(255, 255, 255, 0);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.53), inset -5px -5px 10px rgba(255, 255, 255, 0.12);
+}
+
+.header-icon {
+  position: absolute;
+  border-radius: 10px;
+  left: 0px;
+  top: 0px;
+}
+
+.header-icon:hover {
+  width: 51px;
+  height: 51px;
+
+}
+
+.icon-box:hover {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+
+
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.32), -3px -3px 6px rgba(220, 220, 220, 0.25);
+}
+
+.nav {
+  position: absolute;
+  height: 70px;
+  width: 355px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.37), -4px -4px 10px rgba(208, 208, 208, 0.15);
+}
+
+.nav-btn {
+  width: 63px;
+  height: 47px;
+  margin-top: 11px;
+  margin-left: 17px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.37), -4px -4px 10px rgba(208, 208, 208, 0.15);
+  border-radius: 15px;
+  z-index: 10;
+  border: none;
+  background-color: var(--dark);
+}
+
+.nav-btn:hover {
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.37), -8px -8px 15px rgba(208, 208, 208, 0.15);
+}
+
+.nav-btn:active, .nav-btn:focus {
+  box-shadow: 8px 8px 15px rgba(255, 255, 255, 0), -8px -8px 15px rgba(255, 255, 255, 0);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.53), inset -5px -5px 10px rgba(255, 255, 255, 0.12);
+
+}
+
+.home-img {
+  position: absolute;
+  height: 128px;
+  width: 128px;
+  top: 119px;
+  left: 111px;
+  border-radius: 15px;
+
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.37), -8px -8px 15px rgba(208, 208, 208, 0.15);
+}
+
+.home-text {
+  position: absolute;
+  width: 280px;
+  height: 80px;
+  top: 286px;
+  left: 34px;
+  border-radius: 20px;
+  background: var(--dark);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.37), -4px -4px 10px rgba(208, 208, 208, 0.15);
+}
+
+.home-head {
+  position: absolute;
+  height: 24px;
+  left: 40px;
+  top: 15px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.home-sub {
+  position: absolute;
+  height: 24px;
+  left: 40px;
+  top: 48px;
+
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+svg {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.nav-area {
+  position: relative;
+  top: 80px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37), -2px -2px 5px rgba(208, 208, 208, 0.15);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--dark);
+  overflow: hidden;
+  right: 0px;
+  top: 0px;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.63), inset -5px -5px 15px rgba(208, 208, 208, 0.432)
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37), -2px -2px 5px rgba(208, 208, 208, 0.15);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222222;
+}

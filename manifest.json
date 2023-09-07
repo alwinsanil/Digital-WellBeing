@@ -1,0 +1,53 @@
+{
+  "name": "Digital WellBeing",
+  "description": "To make work on Internet work",
+  "manifest_version": 2,
+  "version": "2",
+
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["js/content-mod4.js"],
+      "css": ["css/yt-remove.css"],
+      "all_frames": true,
+      "matches": ["*://*.youtube.com/*"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "background": {
+    "scripts": ["js/background-mod3.js", "js/background-mod2.js"]
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Digital Wellbeing",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+
+  "permissions": [
+    "storage",
+    "*://*.youtube.com/*",
+    "tabs",
+    "notifications",
+    "idle",
+    "contentSettings",
+    "<all_urls>"
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.gstatic.com; object-src 'self'"
+}

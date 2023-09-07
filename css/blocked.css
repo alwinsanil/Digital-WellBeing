@@ -1,0 +1,152 @@
+:root {
+	--dark: #333333;
+	--hightlight-text: #AD00FF;
+	--dark-black: #2a2a2a;
+	--white: #ffffff;
+	--dlt-btn-clr: #ff4a4a;
+}
+
+body {
+	background-color: var(--dark);
+	color: var(--white);
+}
+
+.home-img {
+	position: absolute;
+	width: 282px;
+	height: 280px;
+	left: 330px;
+	top: 180px;
+
+	background: url(icon128.png);
+	border-radius: 40px;
+
+	box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.37), -8px -8px 15px rgba(208, 208, 208, 0.15);
+}
+
+.home-text {
+	position: absolute;
+	left: 220px;
+	top: 550px;
+	width: 500px;
+	height: 186px;
+
+	background: #333333;
+	box-shadow: 8px 8px 40px #1D1D1D, -8px -8px 40px #5C5C5C;
+	border-radius: 20px;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.home-head {
+	position: absolute;
+	top: 40px;
+	left: 60px;
+
+	vertical-align: middle;
+	align-items: center;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 58px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.home-sub {
+	position: absolute;
+	width: 383px;
+	height: 43px;
+	left: 80px;
+	top: 110px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.sec {
+	position: absolute;
+	left: 50%;
+	top: 180px;
+	bottom: 21.67%;
+	width: 630px;
+
+	background: #333333;
+	box-shadow: 8px 8px 40px #1D1D1D, -8px -8px 40px #5C5C5C;
+	border-radius: 20px;
+}
+
+.blocked-text {
+	background-color: var(--dark);
+	display: table-cell;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin: auto;
+	align-items: center;
+	position: absolute;
+	margin: 50px;
+	width: 400px;
+	height: 100px;
+	left: 60px;
+	border: #f00000 solid 2px;
+	border-radius: 20px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 58px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #ff0000;
+}
+
+.blocked-text:hover {
+	color: #ffffff;
+	background-color: #ff0000;
+}
+
+.blocked-subtext {
+	position: absolute;
+	width: 500px;
+	height: 251px;
+	top: 180px;
+	left: 60px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 100;
+	font-size: 28px;
+	line-height: 39px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.naughty {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	border-radius: 10px;
+}
+
+img {
+	border-radius: 10px;
+	box-shadow: 4px 4px 10px #1D1D1D, -4px -4px 10px #5C5C5C;
+}
